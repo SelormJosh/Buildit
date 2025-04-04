@@ -1,0 +1,40 @@
+/* SVG Logo for Buildit */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-mountain {
+  fill: white;
+  height: 24px;
+  width: auto;
+}
+
+.logo-text {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: white;
+  margin: 0;
+  line-height: 1;
+}
+
+.navbar.scrolled .logo-mountain {
+  fill: var(--primary-color);
+}
+
+.navbar.scrolled .logo-text {
+  color: var(--primary-color);
+}
+
+/* Adjust logo size on mobile */
+@media (max-width: 767px) {
+  .logo-mountain {
+    height: 20px;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+  }
+}
